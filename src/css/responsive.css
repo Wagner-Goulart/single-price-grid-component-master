@@ -1,0 +1,16 @@
+@media (max-width:520px) {
+    body {
+        padding: 3.2rem;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 'info'
+                            'sign-up'
+                            'why-us';
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}

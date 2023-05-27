@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(375px 500px));
+    grid-template-areas: 'info info'
+                        'sign-up why-us';
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #0000005b;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.info {
+    grid-area: info;
+    padding: 3rem;
+}
+
+.info .title {
+  margin-bottom: 2rem;
+  color: hsl(179, 62%, 43%);
+}
+
+.info strong {
+    display: inline-block;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 2rem;
+}
+
+.info .description {
+    color: hsl(218, 22%, 67%);
+    max-width: 600px;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.sign-up {
+    grid-area: sign-up;
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+    padding: 3rem;
+}
+
+.sign-up .title,
+.sign-up .month-payment,
+.sign-up .description,
+.why-us .title,
+.why-us .description {
+    margin-bottom: 2rem;
+}
+
+.sign-up .month-payment,
+.sign-up .month-payment strong {
+    display: inline-block;
+}
+
+.sign-up .month-payment strong {
+    margin-right: 1rem;
+    font-size: 3rem;
+    color: hsl(204, 43%, 93%);
+}
+
+.sign-up .sing-up-btn {
+    width: 250px;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    color: hsl(204, 43%, 93%);
+    background-color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    box-shadow: 1px 1px 5px #0000005b;
+    cursor: pointer;
+}
+
+.why-us {
+    grid-area: why-us;
+    padding: 3rem;
+    color: hsl(204, 43%, 93%);
+    background-color: hsla(179, 90%, 30%, 0.568);
+}
+
+.why-us .description {
+    max-width: 230px;
+    line-height: 2rem;
+}
+
+a {
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
+}
